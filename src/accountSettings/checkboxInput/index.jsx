@@ -8,7 +8,7 @@ const CheckboxInput = (props) => {
   return (
     <label className={cx({[s.control]: true, [s.controlCheckbox]: true})}>
         <span>{value}</span>
-        <input type="checkbox" checkedDefault={true} />
+        <input type="checkbox" defaultChecked={true} />
         <div className={s.control_indicator}></div>
     </label>
   )

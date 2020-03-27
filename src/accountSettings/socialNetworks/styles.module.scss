@@ -1,5 +1,42 @@
 .container {
   width: 295px;
-  background: #eeeeee;
+  margin-bottom: auto;
   flex-grow: 0;
+  padding: 24px 17px 35px 17px;
+  background: #FFF6E0;
+  h4 {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+
+  }
+  .info {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: -0.03em;
+  }
+  .buttons {
+    margin-top: 15px;
+    .button {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: -0.025em;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .imgWrapper {
+        margin-right: 16px;
+        width: 21px;
+      }
+    }
+  }
 }

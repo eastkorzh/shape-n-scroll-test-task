@@ -1,5 +1,41 @@
 .container {
   width: 295px;
-  background: #eeeeee;
+  margin-bottom: auto;
   flex-grow: 0;
+  padding: 24px 17px 35px 17px;
+  background: #fff6e0;
+}
+.container h4 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+.container .info {
+  margin-top: 15px;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.03em;
+}
+.container .buttons {
+  margin-top: 15px;
+}
+.container .buttons .button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.container .buttons .button:last-child {
+  margin-bottom: 0;
+}
+.container .buttons .button .imgWrapper {
+  margin-right: 16px;
+  width: 21px;
 }
