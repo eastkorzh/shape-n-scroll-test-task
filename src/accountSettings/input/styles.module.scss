@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  border: 1px solid #D5D5D5;
+  height: 49px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px;
+  font-size: 15px;
+  input {
+    border: 1px solid #D5D5D5;
+    height: 31px;
+    padding: 0 8px;
+    outline: none;
+    width: 308px;
+    font-size: 15px;
+  }
+  .inputValueWrapper {
+    padding-left: 8px;
+  }
+  .placeholder {
+    color: #A6A6A6;
+  }
+
+  .button {
+    font-size: 13px;
+    letter-spacing: -0.045em;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  .save {
+    color: #E85A22;
+    margin-right: 8px;
+  }
+  .edit {
+    color: #A6A6A6;
+  }
+}
+
+.active {
+  background: #F4F4F4;
+}

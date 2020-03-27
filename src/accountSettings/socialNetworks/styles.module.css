@@ -1,0 +1,5 @@
+.container {
+  width: 295px;
+  background: #eeeeee;
+  flex-grow: 0;
+}
