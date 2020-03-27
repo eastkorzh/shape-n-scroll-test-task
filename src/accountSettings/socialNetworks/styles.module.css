@@ -39,3 +39,13 @@
   margin-right: 16px;
   width: 21px;
 }
+@media (max-width: 700px) {
+  .container {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+  }
+}

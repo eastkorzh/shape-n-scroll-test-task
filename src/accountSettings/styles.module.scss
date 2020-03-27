@@ -44,6 +44,15 @@
     .wrapper {
       flex-direction: column;
       justify-content: flex-start;
+      .settings {
+        margin-right: 0;
+      }
     }
+  }
+}
+
+@media (max-width: 450px) {
+  .container {
+    padding: 15px 15px;
   }
 }

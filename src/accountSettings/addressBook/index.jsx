@@ -168,18 +168,21 @@ const AddressBook = () => {
             <h4>Добавить адрес</h4>
             <div className={s.firstRow}>
               <input 
+                className={s.newAddressInput}
                 type="text"
                 name="zipCode"
                 placeholder="Индекс"
                 defaultValue={newAddress['zipCode']}
               />
               <input 
+                className={s.newAddressInput}
                 type="text"
                 name="country"
                 placeholder="Страна"
                 defaultValue={newAddress['country']}
               />
               <input 
+                className={s.newAddressInput}
                 type="text"
                 name="city"
                 placeholder="Город"
@@ -187,6 +190,7 @@ const AddressBook = () => {
               />
             </div>
             <input 
+              className={s.newAddressInput}
               type="text"
               name="address"
               placeholder="Адрес"

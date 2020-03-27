@@ -40,4 +40,12 @@
     flex-direction: column;
     justify-content: flex-start;
   }
+  .container .wrapper .settings {
+    margin-right: 0;
+  }
+}
+@media (max-width: 450px) {
+  .container {
+    padding: 15px 15px;
+  }
 }
