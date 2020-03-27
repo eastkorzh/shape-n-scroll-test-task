@@ -55,6 +55,27 @@
 }
 .container form .radioWrapper label {
   padding-top: 1px;
+  width: 100%;
+}
+.container form .radioWrapper label .inputWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container form .radioWrapper label .inputWrapper input {
+  border: 1px solid #d5d5d5;
+  height: 31px;
+  padding: 0 8px;
+  outline: none;
+  width: 100%;
+  font-size: 15px;
+}
+.container form .radioWrapper label .inputWrapper .delete {
+  margin-left: 15px;
+  color: #e85a22;
+  margin-right: 8px;
+  font-size: 13px;
+  text-decoration: underline;
 }
 .container form .radioWrapper [type="radio"]:checked + label:before,
 .container form .radioWrapper [type="radio"]:not(:checked) + label:before {
@@ -90,6 +111,20 @@
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+.container .editMode {
+  width: 100%;
+  border: 1px solid #d5d5d5;
+  padding: 18px;
+  font-size: 15px;
+}
+.container .editMode h4 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: #333333;
 }
 .active {
   background: #f4f4f4;
