@@ -1,0 +1,96 @@
+.container {
+  width: 100%;
+  border: 1px solid #d5d5d5;
+  padding: 18px;
+  font-size: 15px;
+}
+.container:hover {
+  background: #f4f4f4;
+}
+.container:hover .edit {
+  color: #e85a22;
+}
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.container .header h4 {
+  font-size: 14px;
+  letter-spacing: -0.025em;
+  color: #000000;
+}
+.container .header .button {
+  font-size: 13px;
+  letter-spacing: -0.045em;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.container .header .save {
+  color: #e85a22;
+  margin-right: 8px;
+}
+.container .header .edit {
+  color: #a6a6a6;
+}
+.container form .radioWrapper {
+  margin-bottom: 13px;
+}
+.container form .radioWrapper:last-child {
+  margin-bottom: 0;
+}
+.container form .radioWrapper [type="radio"]:checked,
+.container form .radioWrapper [type="radio"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.container form .radioWrapper [type="radio"]:checked + label,
+.container form .radioWrapper [type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 28px;
+  cursor: pointer;
+  line-height: 16px;
+  display: inline-block;
+  font-size: 15px;
+}
+.container form .radioWrapper label {
+  padding-top: 1px;
+}
+.container form .radioWrapper [type="radio"]:checked + label:before,
+.container form .radioWrapper [type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #a6a6a6;
+  border-radius: 100%;
+  background: #fff;
+}
+.container form .radioWrapper [type="radio"]:checked + label:after,
+.container form .radioWrapper [type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background: #000000;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.container form .radioWrapper [type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+.container form .radioWrapper [type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+.active {
+  background: #f4f4f4;
+}

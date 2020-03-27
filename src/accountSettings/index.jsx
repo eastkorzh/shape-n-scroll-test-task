@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AddressBook from './addressBook';
 import Input from './input';
 import SocialNetworks from './socialNetworks';
 import s from './styles.module.scss';
@@ -56,9 +57,7 @@ const AccountSettings = () => {
 
             <div className={s.formWrapper}>
               <h4>Адресная книга</h4>
-              <form onSubmit={e => e.preventDefault()}>
-
-              </form>
+              <AddressBook />
             </div>
           </div>
 

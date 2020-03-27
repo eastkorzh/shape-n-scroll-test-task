@@ -1,0 +1,100 @@
+.container {
+  width: 100%;
+  border: 1px solid #D5D5D5;
+  padding: 18px;
+  font-size: 15px;
+  &:hover {
+    background: #F4F4F4;
+    .edit {
+      color: #E85A22;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    h4 {
+      font-size: 14px;
+      letter-spacing: -0.025em;
+      color: #000000;
+    }
+    .button {
+      font-size: 13px;
+      letter-spacing: -0.045em;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .save {
+      color: #E85A22;
+      margin-right: 8px;
+    }
+    .edit {
+      color: #A6A6A6;
+    }
+  }
+  form {
+    .radioWrapper {
+      margin-bottom: 13px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      [type="radio"]:checked,
+      [type="radio"]:not(:checked) {
+          position: absolute;
+          left: -9999px;
+      }
+      [type="radio"]:checked + label,
+      [type="radio"]:not(:checked) + label
+      {
+          position: relative;
+          padding-left: 28px;
+          cursor: pointer;
+          line-height: 16px;
+          display: inline-block;
+          font-size: 15px;
+      }
+      label {
+        padding-top: 1px;
+      }
+      [type="radio"]:checked + label:before,
+      [type="radio"]:not(:checked) + label:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 16px;
+          height: 16px;
+          border: 1px solid #A6A6A6;
+          border-radius: 100%;
+          background: #fff;
+      }
+      [type="radio"]:checked + label:after,
+      [type="radio"]:not(:checked) + label:after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          background: #000000;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          border-radius: 100%;
+          -webkit-transition: all 0.2s ease;
+          transition: all 0.2s ease;
+      }
+      [type="radio"]:not(:checked) + label:after {
+          opacity: 0;
+          -webkit-transform: scale(0);
+          transform: scale(0);
+      }
+      [type="radio"]:checked + label:after {
+          opacity: 1;
+          -webkit-transform: scale(1);
+          transform: scale(1);
+      }
+    }
+  }
+}
+
+.active {
+  background: #F4F4F4;
+}

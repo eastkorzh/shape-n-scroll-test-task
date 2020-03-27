@@ -8,6 +8,12 @@
   padding: 11px;
   font-size: 15px;
 }
+.container:hover {
+  background: #f4f4f4;
+}
+.container:hover .edit {
+  color: #e85a22;
+}
 .container input {
   border: 1px solid #d5d5d5;
   height: 31px;

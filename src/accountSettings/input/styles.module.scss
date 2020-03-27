@@ -7,6 +7,12 @@
   justify-content: space-between;
   padding: 11px;
   font-size: 15px;
+  &:hover {
+    background: #F4F4F4;
+    .edit {
+      color: #E85A22;
+    }
+  }
   input {
     border: 1px solid #D5D5D5;
     height: 31px;

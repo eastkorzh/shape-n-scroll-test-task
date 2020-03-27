@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
+import cx from 'classnames';
 
 import useOutsideClick from '../../hooks/useOutsideClick';
-import cx from 'classnames';
 
 import s from './styles.module.scss';
 
