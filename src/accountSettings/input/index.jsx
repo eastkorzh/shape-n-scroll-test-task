@@ -39,7 +39,7 @@ const Input = (props) => {
           type={type}
         /> :
         <div className={s.inputValueWrapper}>
-          {savedValue ? 
+          {savedValue && type !== 'password'  ? 
             <span className={s.inputValue}>{savedValue}</span> :
             <span className={s.placeholder}>{mainPlaceholder}</span>
           }

@@ -18,17 +18,23 @@
         font-style: normal;
         margin-bottom: 20px;
       }
-
-      .formWrapper {
-        h4 {
-          font-style: normal;
-          font-weight: normal;
-          font-size: 19px;
-          line-height: 23px;
-          letter-spacing: -0.005em;
-          margin-bottom: 15px;
+      .forms {
+        .formWrapper {
+          margin-top: 42px;
+          h4 {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 19px;
+            line-height: 23px;
+            letter-spacing: -0.005em;
+            margin-bottom: 15px;
+          }
+          &:first-child {
+            margin-top: 0;
+          }
         }
       }
+
     }
   }
 }
